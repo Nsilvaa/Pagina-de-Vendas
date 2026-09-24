@@ -1,17 +1,17 @@
 :root {
-    --bg: #0b1020;
-    --bg-2: #121b2d;
-    --bg-3: #1a2340;
-    --panel: rgba(20, 28, 44, .82);
-    --paper: #f7f3eb;
-    --ink: #edf3ff;
-    --ink-dim: #afbdd7;
-    --ink-faint: #7d8ca9;
-    --pink: #ff4f8b;
-    --pink-strong: #ff2a6d;
-    --cyan: #77ebff;
-    --yellow: #f9c74f;
-    --violet: #8d82ff;
+    --bg: #050806;
+    --bg-2: #0d130d;
+    --bg-3: #14200f;
+    --panel: rgba(10, 20, 10, .82);
+    --paper: #f7f0da;
+    --ink: #eef7e8;
+    --ink-dim: #a9c2a0;
+    --ink-faint: #7c9273;
+    --pink: #39ff6a;
+    --pink-strong: #16c94a;
+    --cyan: #ffd23f;
+    --yellow: #f2b705;
+    --violet: #0fbf5f;
     --line: rgba(255, 255, 255, .08);
     --shadow: 0 30px 80px rgba(3, 7, 18, .42);
     --font-display: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
@@ -32,8 +32,8 @@ html {
 
 body {
     background:
-        radial-gradient(circle at top left, rgba(255, 79, 139, .18), transparent 26%),
-        radial-gradient(circle at bottom right, rgba(119, 235, 255, .14), transparent 24%),
+        radial-gradient(circle at top left, rgba(57, 255, 106, .18), transparent 26%),
+        radial-gradient(circle at bottom right, rgba(255, 210, 63, .14), transparent 24%),
         var(--bg);
     color: var(--ink);
     font-family: var(--font-body);
@@ -44,7 +44,7 @@ body {
 
 ::selection {
     background: linear-gradient(90deg, var(--pink), var(--cyan));
-    color: #08111d;
+    color: #0b1a0c;
 }
 
 a {
@@ -81,7 +81,7 @@ svg.defs {
     display: flex;
     gap: 5px;
     padding: 12px 16px;
-    background: linear-gradient(to bottom, rgba(11, 16, 32, .9), transparent);
+    background: linear-gradient(to bottom, rgba(6, 10, 6, .9), transparent);
     backdrop-filter: blur(8px);
 }
 
@@ -114,7 +114,7 @@ svg.defs {
     color: #fff;
     padding: 15px 22px;
     border-radius: 999px;
-    box-shadow: 0 18px 34px -14px rgba(255, 47, 109, .7);
+    box-shadow: 0 18px 34px -14px rgba(22, 201, 74, .55);
     opacity: 0;
     transform: translateY(14px) scale(.96);
     pointer-events: none;
@@ -180,13 +180,13 @@ svg.defs {
     padding: 17px 30px;
     border-radius: 999px;
     border: 1px solid rgba(255,255,255,.12);
-    box-shadow: 0 20px 36px -18px rgba(255, 78, 130, .9);
+    box-shadow: 0 20px 36px -18px rgba(22, 201, 74, .85);
     transition: transform .15s ease, box-shadow .2s ease;
 }
 
 .sticker-btn:hover .btn {
     transform: translateY(-2px) rotate(-1deg);
-    box-shadow: 0 26px 36px -18px rgba(255, 78, 130, .9);
+    box-shadow: 0 26px 36px -18px rgba(22, 201, 74, .85);
 }
 
 section {
@@ -214,8 +214,8 @@ section {
     left: -60px;
     width: 520px;
     height: 520px;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 79, 139, .38), transparent 52%),
-        radial-gradient(circle at 70% 70%, rgba(119, 235, 255, .28), transparent 58%);
+    background: radial-gradient(circle at 30% 30%, rgba(57, 255, 106, .38), transparent 52%),
+        radial-gradient(circle at 70% 70%, rgba(255, 210, 63, .28), transparent 58%);
     filter: blur(18px);
     z-index: 0;
     pointer-events: none;
@@ -257,7 +257,7 @@ section {
 }
 
 .phone {
-    background: linear-gradient(180deg, rgba(19, 27, 42, .96), rgba(10, 14, 24, .95));
+    background: linear-gradient(180deg, rgba(13, 20, 13, .96), rgba(8, 14, 8, .95));
     border: 1px solid var(--line);
     border-radius: 30px;
     padding: 20px;
@@ -357,7 +357,7 @@ section {
 }
 
 .note {
-    background: linear-gradient(180deg, rgba(18, 27, 45, .96), rgba(15, 20, 32, .96));
+    background: linear-gradient(180deg, rgba(14, 21, 14, .96), rgba(10, 15, 10, .96));
     width: 270px;
     padding: 26px 24px 30px;
     border: 1px solid var(--line);
@@ -421,7 +421,7 @@ section {
 }
 
 .promise-item.yes {
-    background: linear-gradient(90deg, rgba(119, 235, 255, .08), rgba(255, 79, 139, .06));
+    background: linear-gradient(90deg, rgba(255, 210, 63, .08), rgba(57, 255, 106, .06));
 }
 
 .p-icon {
@@ -443,8 +443,8 @@ section {
 }
 
 .yes .p-icon {
-    background: linear-gradient(135deg, var(--cyan), #7bd9ff);
-    color: #07111d;
+    background: linear-gradient(135deg, var(--cyan), #ffe58a);
+    color: #1a1400;
 }
 
 .promise-item span {
@@ -487,18 +487,18 @@ section {
     left: 50%;
     transform: translateX(-50%) rotate(-4deg);
     background: linear-gradient(135deg, var(--yellow), #ffd98d);
-    color: #111827;
+    color: #1a1400;
     font-family: var(--font-accent);
     font-size: 22px;
     font-weight: 700;
     padding: 8px 20px;
     border-radius: 999px;
     white-space: nowrap;
-    box-shadow: 0 12px 20px -10px rgba(249, 199, 79, .7);
+    box-shadow: 0 12px 20px -10px rgba(242, 183, 5, .55);
 }
 
 .speech-bubble {
-    background: linear-gradient(180deg, rgba(20, 29, 44, .96), rgba(12, 18, 28, .96));
+    background: linear-gradient(180deg, rgba(15, 22, 15, .96), rgba(9, 14, 9, .96));
     border: 1px solid var(--line);
     border-radius: 26px 26px 26px 6px;
     padding: 24px 26px;
@@ -591,7 +591,7 @@ section {
 }
 
 .vs-col.b {
-    background: linear-gradient(160deg, rgba(255, 79, 139, .08), rgba(119, 235, 255, .08));
+    background: linear-gradient(160deg, rgba(57, 255, 106, .08), rgba(255, 210, 63, .08));
 }
 
 .vs-badge {
@@ -600,7 +600,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-6deg);
     background: linear-gradient(135deg, var(--yellow), #ffd98d);
-    color: #111827;
+    color: #1a1400;
     font-family: var(--font-display);
     font-weight: 800;
     font-size: 14px;
@@ -610,7 +610,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 18px 32px -18px rgba(249, 199, 79, .8);
+    box-shadow: 0 18px 32px -18px rgba(242, 183, 5, .65);
     z-index: 2;
 }
 
@@ -668,7 +668,7 @@ section {
 }
 
 .community-card {
-    background: linear-gradient(180deg, rgba(20, 29, 44, .96), rgba(14, 18, 28, .96));
+    background: linear-gradient(180deg, rgba(15, 22, 15, .96), rgba(10, 15, 10, .96));
     border: 1px solid var(--line);
     border-radius: 24px;
     padding: 30px;
@@ -708,7 +708,7 @@ section {
 }
 
 .price-card {
-    background: linear-gradient(180deg, #f9f5ef, #f0e9df);
+    background: linear-gradient(180deg, #f7f0d8, #efe2c0);
     color: #141412;
     border-radius: 30px;
     padding: 46px 44px;
@@ -792,14 +792,14 @@ section {
 }
 
 .price-card .btn {
-    background: #111827;
+    background: #0d1a0d;
     color: var(--paper);
     width: 100%;
     text-align: center;
 }
 
 .price-card .sticker-btn::before {
-    border-color: #111827;
+    border-color: #0d1a0d;
 }
 
 .guarantee {
@@ -807,7 +807,7 @@ section {
     gap: 14px;
     align-items: center;
     margin-top: 26px;
-    background: rgba(17, 24, 39, .05);
+    background: rgba(13, 26, 13, .05);
     border-radius: 18px;
     padding: 16px 18px;
 }
@@ -861,7 +861,7 @@ section {
 
 .msg.a {
     align-self: flex-end;
-    background: linear-gradient(120deg, rgba(119, 235, 255, .11), rgba(255, 79, 139, .09));
+    background: linear-gradient(120deg, rgba(255, 210, 63, .11), rgba(57, 255, 106, .09));
     border: 1px solid rgba(255,255,255,.08);
     border-radius: 20px 20px 4px 20px;
     color: var(--ink-dim);
